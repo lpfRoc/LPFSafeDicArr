@@ -16,8 +16,6 @@
 		D8A541E81E8265E0008301C9 /* LPFSafeDicArrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A541E71E8265E0008301C9 /* LPFSafeDicArrUITests.m */; };
 		D8A541FB1E8266F2008301C9 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A541FA1E8266F2008301C9 /* NSObject+Swizzling.m */; };
 		D8A541FE1E826701008301C9 /* NSMutableArray+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A541FD1E826701008301C9 /* NSMutableArray+Swizzling.m */; };
-		D8A542011E826881008301C9 /* NSArray+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A542001E826881008301C9 /* NSArray+Swizzling.m */; };
-		D8FEC27C1E836FB00081CA2D /* NSDictionary+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FEC27B1E836FB00081CA2D /* NSDictionary+Swizzling.m */; };
 		D8FEC27F1E837EAA0081CA2D /* NSMutableDictionary+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FEC27E1E837EAA0081CA2D /* NSMutableDictionary+Swizzling.m */; };
 /* End PBXBuildFile section */
 
@@ -58,10 +56,6 @@
 		D8A541FA1E8266F2008301C9 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
 		D8A541FC1E826701008301C9 /* NSMutableArray+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Swizzling.h"; sourceTree = "<group>"; };
 		D8A541FD1E826701008301C9 /* NSMutableArray+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Swizzling.m"; sourceTree = "<group>"; };
-		D8A541FF1E826881008301C9 /* NSArray+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Swizzling.h"; sourceTree = "<group>"; };
-		D8A542001E826881008301C9 /* NSArray+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Swizzling.m"; sourceTree = "<group>"; };
-		D8FEC27A1E836FB00081CA2D /* NSDictionary+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Swizzling.h"; sourceTree = "<group>"; };
-		D8FEC27B1E836FB00081CA2D /* NSDictionary+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Swizzling.m"; sourceTree = "<group>"; };
 		D8FEC27D1E837EAA0081CA2D /* NSMutableDictionary+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Swizzling.h"; sourceTree = "<group>"; };
 		D8FEC27E1E837EAA0081CA2D /* NSMutableDictionary+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Swizzling.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,12 +152,8 @@
 			children = (
 				D8A541F91E8266F2008301C9 /* NSObject+Swizzling.h */,
 				D8A541FA1E8266F2008301C9 /* NSObject+Swizzling.m */,
-				D8A541FF1E826881008301C9 /* NSArray+Swizzling.h */,
-				D8A542001E826881008301C9 /* NSArray+Swizzling.m */,
 				D8A541FC1E826701008301C9 /* NSMutableArray+Swizzling.h */,
 				D8A541FD1E826701008301C9 /* NSMutableArray+Swizzling.m */,
-				D8FEC27A1E836FB00081CA2D /* NSDictionary+Swizzling.h */,
-				D8FEC27B1E836FB00081CA2D /* NSDictionary+Swizzling.m */,
 				D8FEC27D1E837EAA0081CA2D /* NSMutableDictionary+Swizzling.h */,
 				D8FEC27E1E837EAA0081CA2D /* NSMutableDictionary+Swizzling.m */,
 			);
@@ -305,9 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A542011E826881008301C9 /* NSArray+Swizzling.m in Sources */,
 				D8A541CA1E8265E0008301C9 /* ViewController.m in Sources */,
-				D8FEC27C1E836FB00081CA2D /* NSDictionary+Swizzling.m in Sources */,
 				D8A541C71E8265E0008301C9 /* AppDelegate.m in Sources */,
 				D8A541C41E8265E0008301C9 /* main.m in Sources */,
 				D8A541FB1E8266F2008301C9 /* NSObject+Swizzling.m in Sources */,
