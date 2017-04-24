@@ -17,7 +17,8 @@
 
         [objc_getClass("__NSPlaceholderDictionary") swizzleSelector:@selector(initWithObjects:forKeys:count:) withSwizzledSelector:@selector(safeInitWithObjects:forKeys:count:)];
         
-        [objc_getClass("__NSDictionaryI") swizzleSelector:@selector(objectForKey:) withSwizzledSelector:@selector(safeObjectForKey:)];
+//     避免系统自身点用此方法，被拦截
+//        [objc_getClass("__NSDictionaryI") swizzleSelector:@selector(objectForKey:) withSwizzledSelector:@selector(safeObjectForKey:)];
     });
 }
 
@@ -57,15 +58,15 @@
     return [self safeInitWithObjects:objects forKeys:keys count:cnt];
 }
 
-- (nullable id)safeObjectForKey:(NSString *)key
-{
-    if (key == nil ||  [self safeObjectForKey:key] == nil ) {
-#if DEBUG
-            NSAssert(NO, @"%s call -safeSetObject:forKey:, key或vale为nil", __FUNCTION__);
-#endif
-        return nil;
-    }
-    
-    return [self safeObjectForKey:key];
-}
+//- (nullable id)safeObjectForKey:(NSString *)key
+//{
+//    if (key == nil ||  [self safeObjectForKey:key] == nil ) {
+//#if DEBUG
+//            NSAssert(NO, @"%s call -safeSetObject:forKey:, key或vale为nil", __FUNCTION__);
+//#endif
+//        return nil;
+//    }
+//    
+//    return [self safeObjectForKey:key];
+//}
 @end
